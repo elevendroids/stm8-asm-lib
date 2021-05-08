@@ -18,6 +18,6 @@
 .define STM8_HAS_UART1
 .define STM8_HAS_UART3
 
-.include "stm8s.inc"
+.include "chips/stm8s.inc"
 
 

@@ -16,5 +16,5 @@
 .define STM8_HAS_TIM4
 .define STM8_HAS_UART2
 
-.include "stm8s.inc"
+.include "chips/stm8s.inc"
 
