@@ -1,6 +1,23 @@
 .stm8
 
 ;
+; Common memory layout definitions
+;
+RAM_START       equ 0x0000
+EEPROM_START    equ 0x4000
+ROM_START       equ 0x8000
+; Interrupt vectors occupy first 128 bytes of Flash
+VECTORS_START   equ 0x8000
+; Code/data sections starts just after the vectors
+CODE_START      equ 0x8080
+
+;
+; Unique ID
+;
+U_ID        equ 0x4865      ; Unique ID (96-bits)
+U_ID_SIZE   equ (96 / 8)    ; Length of the UID
+
+;
 ; GPIO
 ;
 PA_ODR      equ 0x5000 ; Port A data output latch register
