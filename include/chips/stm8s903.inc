@@ -1,3 +1,4 @@
+; vim: ft=asm
 .stm8
 
 ; MCU family selection
